@@ -1,0 +1,114 @@
+/* Additional styling for the chat page */
+body {
+    background-image: url(back.png);
+    background-size: cover;
+}
+.logo {
+    height:10vh;
+}
+.chat-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-box {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-bottom: 20px;
+}
+
+.chat-message {
+    margin-bottom: 10px;
+}
+
+.username {
+    font-weight: bold;
+}
+
+#chat-form {
+    margin-top: 20px;
+    display: flex;
+}
+
+#message-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#message-input:focus {
+    outline: none;
+}
+
+#chat-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#chat-form button:hover {
+    background-color: #555;
+}
+
+/* Navbar styling */
+nav {
+    position: relative;
+    padding-bottom: 12px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+ul li {
+    margin: 0 40px 0 0;
+    opacity: .7;
+    transition: all 0.4s ease;
+}
+
+ul li:hover {
+    opacity: .75;
+}
+
+ul li.active {
+    opacity: 1;
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    letter-spacing: .2em;
+    font-size: large;
+    font-weight: 1000;
+    justify-content: space-evenly;
+}
+
+/* Center */
+/*body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}*/
