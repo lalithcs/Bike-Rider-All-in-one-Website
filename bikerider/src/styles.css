@@ -107,7 +107,7 @@ ul li a {
 .line {
     height: 2px;
     position: absolute;
-    margin-top: 10px;
+    margin-top: 20px;
     background: #FF1847; /* Line color */
     transition: all 0.3s ease; /* Transition effect for smooth animation */
 }
