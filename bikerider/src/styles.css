@@ -104,7 +104,18 @@ ul li a {
     font-weight: 1000;
     justify-content: space-evenly;
 }
+.line {
+    height: 2px;
+    position: absolute;
+    margin-top: 10px;
+    background: #FF1847; /* Line color */
+    transition: all 0.3s ease; /* Transition effect for smooth animation */
+}
 
+/* Adjustments for the active state */
+ul li.active .line {
+    width: 100%; /* Set line width to 100% when the corresponding navigation item is active */
+}
 /* Center */
 /*body {
     display: flex;
