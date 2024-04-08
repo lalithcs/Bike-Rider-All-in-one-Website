@@ -31,6 +31,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Verify entered password against hashed password
         if (password_verify($password, $hashed_password)) {
             // If credentials match, redirect to the "community" page
+            session_start(); // Start a PHP session
+            $_SESSION['username'] = $username; // Store username in the session
             header('Location: community.html');
             exit();
         } else {

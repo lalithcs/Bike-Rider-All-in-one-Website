@@ -15,7 +15,7 @@ document.getElementById('chat-form').addEventListener('submit', function(event) 
     var message = messageInput.value.trim();
     if (message !== '') {
         // For simplicity, let's assume the username is hardcoded for now
-        var username = 'User';
+        var username = "<?php echo isset($_SESSION['username']) ? $_SESSION['username'] : 'Unknown'; ?>";;
         // Append the message to the chat box
         appendMessage(username, message);
         // Clear input field after sending
